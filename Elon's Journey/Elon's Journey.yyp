@@ -1,6 +1,10 @@
 {
   "resources": [
+    {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"order":0,},
     {"id":{"name":"spr_startBackground","path":"sprites/spr_startBackground/spr_startBackground.yy",},"order":0,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":1,},
+    {"id":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},"order":1,},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":1,},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":0,},
   ],
   "Options": [
@@ -18,6 +22,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
+    {"roomId":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
