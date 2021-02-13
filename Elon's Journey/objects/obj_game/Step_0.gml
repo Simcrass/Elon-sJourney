@@ -26,3 +26,4 @@ if(keyboard_check(ord("N"))){
 if(keyboard_check(ord("M"))){
 	room_goto(rm_mars);
 }
+

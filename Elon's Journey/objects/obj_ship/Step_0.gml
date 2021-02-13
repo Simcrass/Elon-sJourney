@@ -18,6 +18,7 @@ if(keyboard_check_released(ord("W"))) {
 move_wrap(true,true,sprite_width/2);
 
 if(keyboard_check_pressed(vk_space)) {
+	audio_play_sound(bullet,998,false);
 	var inst = instance_create_layer(x,y, "instances", obj_bullet);
 	inst.direction = image_angle + 90;
 	

@@ -2,6 +2,7 @@ score += 1;
 instance_destroy();
 
 with(other) {
+	audio_play_sound(smash,999,false);
 	instance_destroy();
 	
 	if(sprite_index == spr_asteroidBig) {
