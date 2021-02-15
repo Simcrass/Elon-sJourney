@@ -1,3 +1,3 @@
-grav = 5;
-motion_add(x, 3);
-gravity = 0.1;
+grav = 3;
+motion_add(x, 10);
+gravity = 0.05;

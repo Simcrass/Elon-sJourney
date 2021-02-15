@@ -15,6 +15,7 @@ if(keyboard_check_released(vk_enter)){
 
 if(room_get_name != rm_start || room != rm_win) {
 	if(keyboard_check(ord("R"))){
+		audio_stop_all();
 		room_goto(rm_lvl1);
 	}
 }
