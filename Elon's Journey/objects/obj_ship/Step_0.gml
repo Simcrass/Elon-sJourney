@@ -1,4 +1,4 @@
-if(keyboard_check(ord("A"))) {
+ if(keyboard_check(ord("A"))) {
 	image_angle = image_angle + 5;
 }
 

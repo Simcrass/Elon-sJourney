@@ -1,4 +1,4 @@
-/// @description Movements and what not
+ /// @description Movements and what not
 move_wrap(true,true,sprite_width/12);
 key_d = keyboard_check(ord ("D"));
 key_a = keyboard_check(ord ("A"));
@@ -52,22 +52,22 @@ if (place_meeting(x+hsp,y,obj_tree)) {
 		x = x + sign(hsp);
 	}
 	hsp = 0;
-	
 }
 
 if (place_meeting(x+hsp,y,obj_cloudSmall)) {
 	hsp = 0;
-	
+	y = y - 1;
 }
 
 if (place_meeting(x+hsp,y,obj_cloudMedium)) {
 	hsp = 0;
+	y = y - 1;
 	
 }
 
 if (place_meeting(x+hsp,y,obj_cloudBig)) {
 	hsp = 0;
-	
+	y = y - 1;
 }
 
 x = x + hsp;
@@ -129,49 +129,49 @@ if(!place_meeting(x,y+1,obj_grass)){
 						sprite_index = spr_playerR;
 					} else {
 						image_speed = 1;
-						if (hsp == 0){
-							sprite_index = spr_player;
+						if (key_d) || (key_a){
+							sprite_index = spr_playerR;
 						} else {
-							sprite_index = spr_playerR;	
+							sprite_index = spr_player;	
 						}
 					}
 				} else {
 					image_speed = 1;
-					if (hsp == 0){
-						sprite_index = spr_player;
+					if (key_d) || (key_a){
+						sprite_index = spr_playerR;
 					} else {
-						sprite_index = spr_playerR;	
+						sprite_index = spr_player;	
 					}
 				}
 				} else {
 					image_speed = 1;
-					if (hsp == 0){
-						sprite_index = spr_player;
+					if (key_d) || (key_a){
+						sprite_index = spr_playerR;
 					} else {
-						sprite_index = spr_playerR;	
+						sprite_index = spr_player;	
 					}
 				}
 				
 		} else {
 			image_speed = 1;
-			if (hsp == 0){
-				sprite_index = spr_player;
-			} else {
-				sprite_index = spr_playerR;	
-			}
+				if (key_d) || (key_a){
+					sprite_index = spr_playerR;
+				} else {
+					sprite_index = spr_player;	
+				}
 		}
 	
 } else {
 	image_speed = 1;
-	if (hsp == 0){
-		sprite_index = spr_player;
-	} else {
-		sprite_index = spr_playerR;	
-	}
+		if (key_d) || (key_a){
+			sprite_index = spr_playerR;
+		} else {
+			sprite_index = spr_player;	
+		}
 }
 
 //change room
 
 if(place_meeting(x,y,obj_shipGoal)) {
-	room_goto(rm_space);
+	room_goto(rm_spaceInfo);
 }
